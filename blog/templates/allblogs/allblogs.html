@@ -44,7 +44,7 @@
               <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="https://www.linkedin.com/in/ashiesh-thomas-mathews-137b49177/">Linkedn</a>
                 <a class="nav-item nav-link" href="#">Resume</a>
-                <a class="nav-item nav-link active" href="#">Blog</a>
+                <a class="nav-item nav-link active" href="http://127.0.0.1:8000/blog/">Blog</a>
               </div>
             </div>
           </nav>
@@ -59,9 +59,9 @@
     <hr />
     {%for blogs in blogs.all%}
     <h3><a href="">{{blogs.title}}</h3></a>
-    {{blogs.pub_date}}
+    {{blogs.pub_date_pretty}}
     <br />
-    {{blogs.body}}
+    {{blogs.summary}}
     <br />
     <img class="img-fluid" src="{{blogs.image.url}}" height="500" width="500"/>
     <br />
